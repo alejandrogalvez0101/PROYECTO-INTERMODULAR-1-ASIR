@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?> 
+<!DOCTYPE academia SYSTEM "modelo.dtd"> 
+<academia nombre="IT Alex Academy"> 
+     <profesores> 
+          <profesor id="P01" especialidad="Redes y Ciberseguridad"> 
+               <nombre>Juan Calvo</nombre> 
+          </profesor> 
+          <profesor id="P02" especialidad="Desarrollo de Software"> 
+               <nombre>Marta García</nombre> 
+          </profesor>
+          <profesor id="P03" especialidad="Inteligencia artificial"> 
+               <nombre>Luis Gonzalez</nombre> 
+          </profesor> 
+     </profesores> 
+
+     <aulas> 
+          <aula id="A01" tipo="Fisica"> 
+               <nombre>Aula Formación - 1</nombre> 
+               <capacidad>10</capacidad> 
+          </aula> 
+          <aula id="A02" tipo="Online"> 
+               <nombre>Aula Online - 2</nombre> 
+               <capacidad>50</capacidad> 
+          </aula> 
+          <aula id="A03" tipo="Online"> 
+               <nombre>Aula Online - 3</nombre> 
+               <capacidad>50</capacidad> 
+          </aula> 
+          <aula id="A04" tipo="Online"> 
+               <nombre>Aula Online - 4</nombre> 
+               <capacidad>50</capacidad> 
+          </aula> 
+
+     </aulas> 
+
+     <reservas> 
+          <reserva id="R001" ref_pro="P01" ref_aula="A01"> 
+               <curso>Ethical Hacking Avanzado</curso> 
+               <horario fecha="2026-05-10">09:00-11:00</horario> 
+               <estado>Confirmada</estado> 
+          </reserva> 
+          <reserva id="R002" ref_pro="P02" ref_aula="A02"> 
+               <curso>Java Full Stack Online</curso> 
+               <horario fecha="2026-05-11">16:00-19:00</horario> 
+               <estado>Pendiente</estado> 
+          </reserva> 
+     </reservas> 
+</academia>

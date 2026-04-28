@@ -1,0 +1,27 @@
+<!ELEMENT academia (profesores, aulas, reservas)>
+<!ATTLIST academia nombre CDATA #REQUIRED>
+
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (nombre)>
+<!ATTLIST profesor 
+    id ID #REQUIRED
+    especialidad CDATA #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT aulas (aula+)>
+<!ELEMENT aula (nombre, capacidad)>
+<!ATTLIST aula 
+    id ID #REQUIRED
+    tipo (Fisica|Online) "Fisica">
+<!ELEMENT capacidad (#PCDATA)>
+
+<!ELEMENT reservas (reserva*)>
+<!ELEMENT reserva (curso, horario, estado)>
+<!ATTLIST reserva 
+    id ID #REQUIRED
+    ref_pro IDREF #REQUIRED
+    ref_aula IDREF #REQUIRED>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT horario (#PCDATA)>
+<!ATTLIST horario fecha CDATA #REQUIRED>
+<!ELEMENT estado (#PCDATA)>
