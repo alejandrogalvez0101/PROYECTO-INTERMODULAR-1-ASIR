@@ -1,0 +1,13 @@
+{
+  "academia": "IT Alex Academy",
+  "reservas": [
+    {
+      "id": "R001",
+      "profesor_id": "P01",
+      "aula_id": "A01",
+      "curso": "Ethical Hacking Avanzado",
+      "fecha": "2026-05-10",
+      "estado": "Confirmada"
+    }
+  ]
+}
