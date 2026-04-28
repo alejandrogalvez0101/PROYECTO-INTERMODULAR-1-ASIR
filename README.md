@@ -9,7 +9,7 @@ El objetivo principal es demostrar la capacidad de integrar diferentes áreas de
 
 ---
 
-## Estructura del Proyecto
+## 🖥️🖥️Estructura del Proyecto🖥️🖥️
 
 El repositorio está organizado siguiendo los módulos clave del ciclo formativo:
 ### 1. Planificación de Redes
